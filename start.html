@@ -1,0 +1,109 @@
+<html>
+<head>
+  <title>DETAILS</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+  <script src="index.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html">THE SPARKS FOUNDATION BANK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  <div style="background-image: url('banklogo.jpg');   background-size: 100% 100%;  background-repeat: no-repeat;">
+
+
+  <h1 style="text-align: center;color:blue;"> CUSTOMER DETAILS</h1>
+
+      <div id="myGrid" style="height: 535px; width:100%; padding-top:10px;" class="ag-theme-alpine"></div>
+
+  
+<input type="button" onclick="modalDisplay()" value="TRANSFER TO">
+
+<div class="modal" id="instructions" data-backdrop="static" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">TRANSFER TO </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                          <div class="form-group row">
+                                <div class="col-sm-4">
+                                    <div style="display: flow-root">
+                                        <label class="input-group-text" for="inputGroupSelect01">Sender's Name</label>
+                                        <select id="sendersName"name="Enter Name" class="form-control">
+                                    <option color="grey" selected hidden value =''>Enter Name</option>
+                                        <option color="black" value="Madhu">Madhu</option>
+                                        <option color="black" value="Rahul">Rahul</option>
+                                        <option color="black" value="Deepa">Deepa</option>
+                                        <option color="black" value="Yogesh">Yogesh</option>
+                                        <option color="black" value="Hrithik">Hrithik</option>
+                                        <option color="black" value="Jyothi">Jyothi</option>
+                                        <option color="black" value="Ketna">Ketna</option>
+                                        <option color="black" value="Akhil">Akhil</option>
+                                        <option color="black" value="Ravi">Ravi</option>
+                                        <option color="black" value="Rohit">Rohit</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div style="display: flow-root">
+                                        <label class="input-group-text" for="inputGroupSelect01">Receivers Name</label>
+                                        <select id="receiversName"name="Enter Name" class="form-control">
+                                    <option color="grey" selected hidden value =''>Enter Name</option>
+                                        <option color="black" value="Madhu">Madhu</option>
+                                        <option color="black" value="Rahul">Rahul</option>
+                                        <option color="black" value="Deepa">Deepa</option>
+                                        <option color="black" value="Yogesh">Yogesh</option>
+                                        <option color="black" value="Hrithik">Hrithik</option>
+                                        <option color="black" value="Jyothi">Jyothi</option>
+                                        <option color="black" value="Ketna">Ketna</option>
+                                        <option color="black" value="Akhil">Akhil</option>
+                                        <option color="black" value="Ravi">Ravi</option>
+                                        <option color="black" value="Rohit">Rohit</option>
+                                         
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4" style="text-align: center;">
+                                    <div style="display: flow-root">
+                                      <label> Enter Amount</label>
+                                      <input type="number" class="form-control" id="Amount">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                                  <input type="button"  onclick="updateRecord()" value="Transfer" style="display: flex; justify-content: center;">
+                           
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

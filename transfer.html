@@ -1,0 +1,146 @@
+<html>
+    <head>
+		<script>
+		function sendMoney(){
+   var enterAmount = parseInt(document.getElementById("enterAmount").value);
+
+   if (enterAmount >20000) {
+      alert("Insufficient Balance.")
+   } else {
+     
+      alert("Successful Transaction !!" ) 
+
+		
+		}
+		
+		</script>
+    <style>
+body {
+  background-image: url('banklogo.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.details{
+    
+    
+    position: absolute;
+    top: 25%;
+    left: 46%;
+    
+}
+.transfer{
+    width: 85%;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%,-50%);
+    padding:30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: left;
+}
+
+
+.txtb{
+    border:1px solid black;
+    margin: 20px 0;
+    padding: 5px 5px;
+    border-radius: 8px;
+}
+.txtb label{
+    
+    text-align: left;
+    color: black;
+    font-size: 25px;
+}
+.txtb input, .txtb textarea{
+    
+    border:1px solid black ;
+    background: none;
+    outline: none;
+    font-size: 25px;
+    background-color:white; 
+}
+
+.txtb select{
+border:1px solid black ;
+    background: none;
+    outline: none;
+    font-size: 25px;
+    background-color:white;
+	
+	 text-align: center;
+    margin-top:-45%;
+	margin-left:36%;
+     transform: translate(-0%,-80%);
+	 border:1px solid black;
+    padding: 0px 0px;
+   padding-right:60px;
+}
+.header-buttons a{
+    padding: 14px 0;
+    color: black;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 15px 35px;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    line-height: 1.4;
+    text-align: center;
+    display:block;
+    background:transparent;
+    text-transform: uppercase;
+    padding-left:40px;
+}
+.header-buttons a:hover{
+	color:white;
+	background: lightblue;
+}
+</style>
+
+</head>
+    <body>
+           <div class="details">
+           <h1>DETAILS</h1></div>
+           <div class="transfer">
+            <div class="txtb">
+            <label>Receiver's Name:</label>
+			
+<form>
+            <select name="Enter Name">
+			<option color="grey" selected hidden>Enter Name</option>
+
+                                        <option color="black" value="Madhu">Madhu</option>
+                                        <option color="black" value="Rahul">Rahul</option>
+                                        <option color="black" value="Deepa">Deepa</option>
+                                        <option color="black" value="Yogesh">Yogesh</option>
+                                        <option color="black" value="Hrithik">Hrithik</option>
+                                        <option color="black" value="Jyothi">Jyothi</option>
+                                        <option color="black" value="Ketna">Ketna</option>
+                                        <option color="black" value="Akhil">Akhil</option>
+                                        <option color="black" value="Ravi">Ravi</option>
+                                        <option color="black" value="Rohit">Rohit</option>
+
+            </select>
+</form>
+         </div>
+	
+	 <div class="txtb">
+                <label >Enter Amount :</label>
+                <input type ="text"  name="" value="" placeholder="Enter Amount">
+            </div>
+
+           <div class="header-buttons">
+<a href="alert.html" >TRANSFER</a>
+</div>
+         
+		 <br>
+
+        </div>
+    </body>
